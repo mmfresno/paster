@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Pick List">
+    <meta name="apple-mobile-web-app-title" content="Paster!!! Canned Notes">
     <meta name="theme-color" content="#667eea">
-    <title>Pick List Manager</title>
+    <title>Paster!!! Canned Notes</title>
     
     <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIlBpY2sgTGlzdCBNYW5hZ2VyIiwKICAic2hvcnRfbmFtZSI6ICJQaWNrTGlzdCIsCiAgImRlc2NyaXB0aW9uIjogIk1hbmFnZSBtdWx0aXBsZSBwaWNrIGxpc3RzIiwKICAic3RhcnRfdXJsIjogIi4iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNmZmZmZmYiLAogICJ0aGVtZV9jb2xvciI6ICIjNjY3ZWVhIiwKICAiaWNvbnMiOiBbeyJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sLCUzQ3N2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxOTInIGhlaWdodD0nMTkyJz4lM0NyZWN0IHdpZHRoPScxOTInIGhlaWdodD0nMTkyJyBmaWxsPSclMjM2NjdlZWEnLz4lM0N0ZXh0IHg9JzUwJTI1JyB5PSc1MCUyNScgZm9udC1zaXplPSc4MCcgZmlsbD0nJTIzZmZmJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBkb21pbmFudC1iYXNlbGluZT0nbWlkZGxlJz7wn5OLJTNDL3RleHQ+JTNDL3N2Zz4iLCJzaXplcyI6ICIxOTJ4MTkyIiwidHlwZSI6ICJpbWFnZS9zdmcreG1sIn0seyJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sLCUzQ3N2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1MTInIGhlaWdodD0nNTEyJz4lM0NyZWN0IHdpZHRoPSc1MTInIGhlaWdodD0nNTEyJyBmaWxsPSclMjM2NjdlZWEnLz4lM0N0ZXh0IHg9JzUwJTI1JyB5PSc1MCUyNScgZm9udC1zaXplPScyNDAnIGZpbGw9JyUyM2ZmZicgdGV4dC1hbmNob3I9J21pZGRsZScgZG9taW5hbnQtYmFzZWxpbmU9J21pZGRsZSc+8J+TiyUzQy90ZXh0PiUzQy9zdmc+Iiwic2l6ZXMiOiAiNTEyeDUxMiIsInR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCJ9XX0=">
     <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Crect width='180' height='180' fill='%23667eea'/%3E%3Ctext x='50%25' y='50%25' font-size='80' fill='%23fff' font-family='Arial' text-anchor='middle' dominant-baseline='middle'%3E📋%3C/text%3E%3C/svg%3E">
@@ -71,14 +71,14 @@
 <body>
     <div class="notif" id="notif"></div>
     <div class="modal" id="itemModal"><div class="modal-box"><h3 id="itemTitle">Add Item</h3><input id="itemInput" placeholder="Enter item name"><div class="modal-btns"><button class="cancel" onclick="closeItemModal()">Cancel</button><button class="ok" id="itemOk" onclick="saveItem()">Add</button></div></div></div>
-    <div class="modal" id="listModal"><div class="modal-box"><h3>Add Pick List</h3><input id="listInput" placeholder="Enter list name"><div class="modal-btns"><button class="cancel" onclick="closeListModal()">Cancel</button><button class="ok" onclick="saveList()">Create</button></div></div></div>
+    <div class="modal" id="listModal"><div class="modal-box"><h3>Add Paster List</h3><input id="listInput" placeholder="Enter list name"><div class="modal-btns"><button class="cancel" onclick="closeListModal()">Cancel</button><button class="ok" onclick="saveList()">Create</button></div></div></div>
     <div class="modal" id="renameModal"><div class="modal-box"><h3>Rename List</h3><input id="renameInput" placeholder="Enter new name"><div class="modal-btns"><button class="cancel" onclick="closeRenameModal()">Cancel</button><button class="ok" onclick="saveRename()">Rename</button></div></div></div>
 
     <div class="container">
-        <h1>Pick List Manager</h1>
+        <h1>Paster!!! Canned Notes</h1>
         <div class="install-prompt" id="install"><p>📱 Install this app!</p><button onclick="showHow()">How</button><button onclick="hideInstall()">Dismiss</button></div>
         <div class="auto-save" id="save"></div>
-        <button class="add-list" onclick="openListModal()">+ Add New Pick List</button>
+        <button class="add-list" onclick="openListModal()">+ Add New Paster List</button>
         <div class="lists" id="lists"></div>
         <div class="section"><h2>Text Editor</h2><textarea id="editor" placeholder="Selected items appear here..."></textarea><div class="btns"><button class="date" onclick="addDate()">📅 Date/Time</button><button class="export" onclick="exportTxt()">💾 Export</button><button class="clear" onclick="clearTxt()">Clear</button><button class="copy" onclick="copyTxt()">Copy</button></div></div>
         <div class="section"><h2>Backup & Restore</h2><div class="btns"><button class="backup" onclick="download()">💾 Download</button><button class="backup" onclick="restore.click()">📁 Restore</button><input type="file" id="restore" accept=".json" style="display:none" onchange="upload(event)"></div></div>
@@ -146,7 +146,7 @@ function saveRename(){const v=document.getElementById('renameInput').value.trim(
 document.getElementById('renameModal').addEventListener('click',e=>{if(e.target.id==='renameModal')closeRenameModal();});
 document.getElementById('renameInput').addEventListener('keypress',e=>{if(e.key==='Enter')saveRename();});
 
-function download(){const b={version:'1.0',timestamp:new Date().toISOString(),data,names,order,nextId},l=document.createElement('a');l.href=URL.createObjectURL(new Blob([JSON.stringify(b,null,2)],{type:'application/json'}));l.download=`picklist-${new Date().toISOString().split('T')[0]}.json`;l.click();notify('Downloaded!');}
+function download(){const b={version:'1.0',timestamp:new Date().toISOString(),data,names,order,nextId},l=document.createElement('a');l.href=URL.createObjectURL(new Blob([JSON.stringify(b,null,2)],{type:'application/json'}));l.download=`pasterlist-${new Date().toISOString().split('T')[0]}.json`;l.click();notify('Downloaded!');}
 function upload(ev){const f=ev.target.files[0];if(!f)return;const r=new FileReader();r.onload=e=>{try{const b=JSON.parse(e.target.result);if(!b.data||typeof b.data!=='object')throw new Error('Invalid');Object.keys(data).forEach(k=>delete data[k]);Object.keys(names).forEach(k=>delete names[k]);Object.keys(sel).forEach(k=>delete sel[k]);Object.assign(data,b.data);Object.assign(names,b.names||{});order=b.order||Object.keys(data).map(k=>parseInt(k));nextId=b.nextId||5;for(const id in data)sel[id]=null;render();save();notify('Restored!');}catch(err){alert('Error: '+err.message);}};r.readAsText(f);ev.target.value='';}
 
 load();
