@@ -21,7 +21,7 @@
         .app-header h1 { color: #1d3557; font-size: 1.5em; margin-bottom: 4px; }
         .app-header .tagline { color: #457b9d; font-size: 0.8em; }
         .header-links { display: flex; justify-content: center; gap: 10px; margin-bottom: 12px; }
-        .header-links button { background: #e3f6fd; color: #1d3557; border: 2px solid #8ecae6; padding: 8px 14px; border-radius: 20px; font-size: 0.85em; font-weight: 600; min-height: 40px; }
+        .header-links button { background: #e3f6fd; color: #1d3557; border: 2px solid #8ecae6; padding: 10px 16px; border-radius: 20px; font-size: 0.85em; font-weight: 600; min-height: 46px; }
         .header-links button:active { background: #bee3f8; }
         
         .auto-save { text-align: center; color: #2a9d8f; font-size: 0.85em; margin-bottom: 10px; min-height: 20px; }
@@ -32,7 +32,7 @@
         .section h2 { color: #1d3557; margin-bottom: 12px; font-size: 1.1em; }
         textarea#editor { width: 100%; min-height: 150px; padding: 12px; border: 1px solid #8ecae6; border-radius: 6px; font-family: monospace; font-size: 1em; resize: vertical; margin-bottom: 12px; }
         .btns { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-        .btns button { padding: 12px; border: none; border-radius: 6px; font-size: 0.95em; font-weight: 600; min-height: 48px; color: white; }
+        .btns button { padding: 12px; border: none; border-radius: 6px; font-size: 0.95em; font-weight: 600; min-height: 54px; color: white; }
         .date { background: #219ebc; }
         .export { background: #2a9d8f; }
         .clear { background: #e63946; }
@@ -44,14 +44,14 @@
         
         .sep-toggle { text-align: center; }
         .sep-toggle label { color: #1d3557; font-weight: 600; display: block; margin-bottom: 10px; font-size: 0.95em; }
-        .sep-btns { display: flex; flex-direction: column; gap: 8px; }
-        .sep-btns button { padding: 10px 14px; border: 2px solid #219ebc; background: white; color: #219ebc; border-radius: 6px; font-weight: 600; min-height: 44px; width: 100%; }
+        .sep-btns { display: flex; flex-direction: row; gap: 8px; }
+        .sep-btns button { padding: 12px 14px; border: 2px solid #219ebc; background: white; color: #219ebc; border-radius: 6px; font-weight: 600; min-height: 50px; flex: 1; }
         .sep-btns button.on { background: #219ebc; color: white; }
         
         .backup-section-inner { text-align: center; }
-        .backup-section-inner .btns { grid-template-columns: 1fr; }
+        .backup-section-inner .btns { grid-template-columns: 1fr 1fr; }
         
-        .add-list { background: #06a77d; color: white; border: none; padding: 14px; border-radius: 8px; font-size: 1em; width: 100%; font-weight: 600; margin-bottom: 15px; }
+        .add-list { background: #06a77d; color: white; border: none; padding: 16px; border-radius: 8px; font-size: 1em; width: 100%; font-weight: 600; margin-bottom: 15px; min-height: 54px; }
         .lists { display: flex; flex-direction: column; gap: 15px; margin-bottom: 15px; }
         .list { background: #f8fcff; border-radius: 8px; padding: 15px; border: 2px solid #bee3f8; }
         
@@ -60,10 +60,10 @@
         
         .list-toolbar { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
         .reorder-h { display: flex; flex-direction: column; gap: 2px; }
-        .reorder-h button { background: #6c757d; color: white; border: none; padding: 4px 8px; border-radius: 4px; font-size: 0.7em; min-width: 40px; min-height: 22px; }
-        .select-btn { background: #ffb703; color: #1d3557; border: none; border-radius: 6px; font-size: 0.95em; font-weight: 700; flex: 2; padding: 10px 8px; min-height: 40px; }
+        .reorder-h button { background: #6c757d; color: white; border: none; padding: 6px 8px; border-radius: 4px; font-size: 0.75em; min-width: 42px; min-height: 26px; }
+        .select-btn { background: #ffb703; color: #1d3557; border: none; border-radius: 6px; font-size: 0.95em; font-weight: 700; flex: 2; padding: 12px 8px; min-height: 48px; }
         .list-actions { display: flex; flex-direction: row; gap: 6px; flex: 1; }
-        .list-actions button { border: none; border-radius: 4px; font-size: 1em; min-height: 40px; flex: 1; color: white; }
+        .list-actions button { border: none; border-radius: 4px; font-size: 1.05em; min-height: 48px; flex: 1; color: white; }
         .add-item-btn { background: #2a9d8f; }
         .del-list-btn { background: #e63946; }
         
@@ -73,7 +73,7 @@
         .item.sel { background: #ffe8b3; }
         .item-controls { display: flex; flex-direction: row; gap: 6px; align-items: center; }
         .item-controls .col { display: flex; flex-direction: column; gap: 3px; }
-        .item-controls button { background: #219ebc; color: white; border: none; padding: 4px; border-radius: 3px; font-size: 0.75em; min-width: 34px; min-height: 22px; }
+        .item-controls button { background: #219ebc; color: white; border: none; padding: 6px; border-radius: 3px; font-size: 0.8em; min-width: 38px; min-height: 26px; }
         .item-controls button.del-item-btn { background: #e63946; }
         .item-controls button.reorder-item-btn { background: #6c757d; }
         .item-text { flex: 1; word-break: break-word; display: flex; align-items: center; font-size: 1em; padding: 4px; }
@@ -82,7 +82,7 @@
         .notif.show { opacity: 1; }
         
         .jump { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 10px; z-index: 100; }
-        .jump button { background: #219ebc; color: white; border: none; padding: 12px; border-radius: 50%; font-size: 1.2em; width: 50px; height: 50px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+        .jump button { background: #219ebc; color: white; border: none; padding: 12px; border-radius: 50%; font-size: 1.3em; width: 56px; height: 56px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
         
         .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(29,53,87,0.5); justify-content: center; align-items: center; z-index: 2000; padding: 20px; }
         .modal.show { display: flex; }
@@ -91,7 +91,7 @@
         .modal-box textarea { width: 100%; min-height: 150px; padding: 12px; border: 1px solid #8ecae6; border-radius: 6px; margin-bottom: 15px; font-size: 1em; resize: vertical; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
         .modal-box input { width: 100%; padding: 12px; border: 1px solid #8ecae6; border-radius: 6px; margin-bottom: 15px; font-size: 1em; }
         .modal-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; flex-shrink: 0; }
-        .modal-btns button { padding: 12px; border: none; border-radius: 6px; font-size: 1em; font-weight: 600; min-height: 48px; }
+        .modal-btns button { padding: 12px; border: none; border-radius: 6px; font-size: 1em; font-weight: 600; min-height: 54px; }
         .cancel { background: #6c757d; color: white; }
         .ok { background: #06a77d; color: white; }
         
@@ -134,6 +134,8 @@
                 <p>Copy — copies all editor text to clipboard.</p>
                 <h4>Separator</h4>
                 <p>Choose Space or New Line — controls how items are joined when added to the editor.</p>
+                <h4>Timestamp on Select</h4>
+                <p>When On (default), any action that copies an item — the list's Select button, double-tap "Copy Only," double-tap "Copy + Paste," and saving an edited item — stamps the current date/time before it, joined with your chosen separator. Turn Off to copy just the item text. (Double-tap "Select" just highlights the item and doesn't copy anything by itself.)</p>
                 <h4>Backup & Restore</h4>
                 <p>💾 Download — saves all your lists as a .json file.</p>
                 <p>📁 Restore — loads lists from a previously saved .json file.</p>
@@ -171,7 +173,10 @@
         <div class="section"><h2>Text Editor</h2><textarea id="editor" placeholder="Selected items appear here..."></textarea><div class="btns"><button class="date" onclick="addDate()">📅 Date/Time</button><button class="export" onclick="exportTxt()">💾 Export</button><button class="clear" onclick="clearTxt()">Clear</button><button class="copy" onclick="copyTxt()">Copy</button></div></div>
         
         <div class="side-by-side">
-            <div class="section sep-toggle"><h2>🔗 Separator</h2><div class="sep-btns"><button id="spaceBtn" class="on" onclick="setSep('space')">Space</button><button id="newlineBtn" onclick="setSep('newline')">New Line</button></div></div>
+            <div class="section sep-toggle"><h2>🔗 Separator</h2><div class="sep-btns"><button id="spaceBtn" class="on" onclick="setSep('space')">Space</button><button id="newlineBtn" onclick="setSep('newline')">New Line</button></div>
+                <label style="color:#1d3557;font-weight:600;display:block;margin:14px 0 8px;font-size:0.95em;">⏱️ Timestamp on Select</label>
+                <div class="sep-btns"><button id="tsOnBtn" class="on" onclick="setTimestamp(true)">On</button><button id="tsOffBtn" onclick="setTimestamp(false)">Off</button></div>
+            </div>
             <div class="section backup-section-inner"><h2>🗂️ Backup</h2><div class="btns"><button class="backup" onclick="download()">💾 Download</button><button class="backup" onclick="restore.click()">📁 Restore</button></div><input type="file" id="restore" accept=".json" style="display:none" onchange="upload(event)"></div>
         </div>
         
@@ -187,9 +192,12 @@
     <script>
 const data={1:['Apple','Banana','Orange','Grape'],2:['Red','Blue','Green','Yellow'],3:['Small','Medium','Large','XLarge'],4:['Morning','Afternoon','Evening','Night']};
 const names={1:'List 1',2:'List 2',3:'List 3',4:'List 4'};
-let sel={},curList=null,curIdx=null,curRen=null,order=[1,2,3,4],nextId=5,saveTimer=null,prompt=null,sep='space',dtAction='copyPaste';
+let sel={},curList=null,curIdx=null,curRen=null,order=[1,2,3,4],nextId=5,saveTimer=null,prompt=null,sep='space',dtAction='copyPaste',tsEnabled=true;
 
 function setSep(type){sep=type;document.getElementById('spaceBtn').classList.toggle('on',type==='space');document.getElementById('newlineBtn').classList.toggle('on',type==='newline');save();}
+function setTimestamp(val){tsEnabled=val;document.getElementById('tsOnBtn').classList.toggle('on',val);document.getElementById('tsOffBtn').classList.toggle('on',!val);save();}
+function getTimestamp(){const now=new Date(),m=String(now.getMonth()+1).padStart(2,'0'),d=String(now.getDate()).padStart(2,'0'),y=now.getFullYear();let h=now.getHours();const min=String(now.getMinutes()).padStart(2,'0'),ap=h>=12?'PM':'AM';h=h%12||12;return `${m}/${d}/${y} ${String(h).padStart(2,'0')}:${min} ${ap}`;}
+function buildEntry(v){const s=sep==='space'?' ':'\n';return tsEnabled?getTimestamp()+s+v:v;}
 function toTop(){window.scrollTo({top:0,behavior:'smooth'});}
 function toBottom(){window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});}
 
@@ -209,10 +217,11 @@ function hideInstall(){document.getElementById('install').style.display='none';l
 if('serviceWorker'in navigator){const sw=`const C='pl-v1';self.addEventListener('install',e=>self.skipWaiting());self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));`;navigator.serviceWorker.register(URL.createObjectURL(new Blob([sw],{type:'application/javascript'}))).catch(e=>console.log(e));}
 window.addEventListener('load',checkInstall);
 
-function save(){clearTimeout(saveTimer);saveTimer=setTimeout(()=>{try{localStorage.setItem('data',JSON.stringify({data,names,order,nextId,sep,dtAction,time:new Date().toISOString()}));const s=document.getElementById('save');s.textContent='✓ Saved';setTimeout(()=>s.textContent='',2000);}catch(e){console.error(e);}},500);}
+function save(){clearTimeout(saveTimer);saveTimer=setTimeout(()=>{try{localStorage.setItem('data',JSON.stringify({data,names,order,nextId,sep,dtAction,tsEnabled,time:new Date().toISOString()}));const s=document.getElementById('save');s.textContent='✓ Saved';setTimeout(()=>s.textContent='',2000);}catch(e){console.error(e);}},500);}
 
-function load(){try{const s=localStorage.getItem('data');if(s){const d=JSON.parse(s);Object.assign(data,d.data);Object.assign(names,d.names);order=d.order||Object.keys(d.data).map(k=>parseInt(k));nextId=d.nextId||5;if(d.sep)sep=d.sep;if(d.dtAction)dtAction=d.dtAction;for(const id in data)sel[id]=null;}}catch(e){console.error(e);}
+function load(){try{const s=localStorage.getItem('data');if(s){const d=JSON.parse(s);Object.assign(data,d.data);Object.assign(names,d.names);order=d.order||Object.keys(d.data).map(k=>parseInt(k));nextId=d.nextId||5;if(d.sep)sep=d.sep;if(d.dtAction)dtAction=d.dtAction;if(typeof d.tsEnabled==='boolean')tsEnabled=d.tsEnabled;for(const id in data)sel[id]=null;}}catch(e){console.error(e);}
     document.getElementById('spaceBtn').classList.toggle('on',sep==='space');document.getElementById('newlineBtn').classList.toggle('on',sep==='newline');
+    document.getElementById('tsOnBtn').classList.toggle('on',tsEnabled);document.getElementById('tsOffBtn').classList.toggle('on',!tsEnabled);
 }
 
 function render(){const c=document.getElementById('lists');c.innerHTML='';for(const id of order)if(data[id])makeList(id);}
@@ -275,8 +284,8 @@ function attachDoubleTap(el,cb){
 }
 
 function doubleTapAction(n,i,v){
-    if(dtAction==='copyPaste'){const ed=document.getElementById('editor'),s=sep==='space'?' ':'\n',t=ed.value?ed.value+s+v:v;ed.value=t;clip(v);notify(`"${v}" copied!`);}
-    else if(dtAction==='copy'){clip(v);notify(`"${v}" copied to clipboard!`);}
+    if(dtAction==='copyPaste'){const s=sep==='space'?' ':'\n',entry=buildEntry(v),ed=document.getElementById('editor'),t=ed.value?ed.value+s+entry:entry;ed.value=t;clip(entry);notify(tsEnabled?`"${v}" + timestamp copied!`:`"${v}" copied!`);}
+    else if(dtAction==='copy'){const entry=buildEntry(v);clip(entry);notify(tsEnabled?`"${v}" + timestamp copied!`:`"${v}" copied to clipboard!`);}
     else if(dtAction==='select'){choose(n,v);}
     else if(dtAction==='edit'){edit(n,i);}
 }
@@ -284,12 +293,12 @@ function doubleTapAction(n,i,v){
 function upItem(n,i){if(i>0){[data[n][i],data[n][i-1]]=[data[n][i-1],data[n][i]];items(n);save();}}
 function downItem(n,i){if(i<data[n].length-1){[data[n][i],data[n][i+1]]=[data[n][i+1],data[n][i]];items(n);save();}}
 function choose(n,v){sel[n]=v;items(n);}
-function pick(n){const v=sel[n];if(v){const e=document.getElementById('editor'),s=sep==='space'?' ':'\n',t=e.value?e.value+s+v:v;e.value=t;clip(v);notify(`"${v}" copied!`);}}
+function pick(n){const v=sel[n];if(v){const s=sep==='space'?' ':'\n',entry=buildEntry(v),e=document.getElementById('editor'),t=e.value?e.value+s+entry:entry;e.value=t;clip(entry);notify(tsEnabled?`"${v}" + timestamp copied!`:`"${v}" copied!`);}}
 function delItem(n,i){if(confirm('Delete?')){data[n].splice(i,1);if(sel[n]===data[n][i])sel[n]=null;items(n);save();}}
 function delList(n){if(confirm(`Delete "${names[n]}"?`)){delete data[n];delete names[n];delete sel[n];const i=order.indexOf(parseInt(n));if(i>-1)order.splice(i,1);render();save();notify('Deleted!');}}
 
 function clearTxt(){document.getElementById('editor').value='';}
-function addDate(){const now=new Date(),m=String(now.getMonth()+1).padStart(2,'0'),d=String(now.getDate()).padStart(2,'0'),y=now.getFullYear();let h=now.getHours();const min=String(now.getMinutes()).padStart(2,'0'),ap=h>=12?'PM':'AM';h=h%12||12;const dt=`${m}/${d}/${y} ${String(h).padStart(2,'0')}:${min} ${ap}`,e=document.getElementById('editor'),p=e.selectionStart;e.value=e.value.substring(0,p)+dt+e.value.substring(e.selectionEnd);e.setSelectionRange(p+dt.length,p+dt.length);e.focus();notify('Date added!');}
+function addDate(){const dt=getTimestamp(),e=document.getElementById('editor'),p=e.selectionStart;e.value=e.value.substring(0,p)+dt+e.value.substring(e.selectionEnd);e.setSelectionRange(p+dt.length,p+dt.length);e.focus();notify('Date added!');}
 function copyTxt(){clip(document.getElementById('editor').value);notify('Copied!');}
 function exportTxt(){const t=document.getElementById('editor').value;if(!t.trim()){alert('Empty');return;}const now=new Date(),fn=`export_${now.getFullYear()}_${String(now.getMonth()+1).padStart(2,'0')}_${String(now.getDate()).padStart(2,'0')}.txt`,l=document.createElement('a');l.href=URL.createObjectURL(new Blob([t],{type:'text/plain'}));l.download=fn;l.click();notify(`Exported!`);}
 function clip(t){if(navigator.clipboard)navigator.clipboard.writeText(t).catch(e=>console.error(e));}
@@ -298,7 +307,7 @@ function notify(m){const n=document.getElementById('notif');n.textContent=m;n.cl
 function openItemModal(n){curList=n;curIdx=null;document.getElementById('itemTitle').textContent='Add Item';document.getElementById('itemOk').textContent='Add';document.getElementById('itemInput').value='';document.getElementById('itemModal').classList.add('show');setTimeout(()=>document.getElementById('itemInput').focus(),100);}
 function edit(n,i){curList=n;curIdx=i;document.getElementById('itemTitle').textContent='Edit Item';document.getElementById('itemOk').textContent='Save';document.getElementById('itemInput').value=data[n][i];document.getElementById('itemModal').classList.add('show');setTimeout(()=>{const inp=document.getElementById('itemInput');inp.focus();inp.select();},100);}
 function closeItemModal(){document.getElementById('itemModal').classList.remove('show');curList=null;curIdx=null;}
-function saveItem(){const v=document.getElementById('itemInput').value.trim();if(v&&curList){if(curIdx!==null){const old=data[curList][curIdx];data[curList][curIdx]=v;if(sel[curList]===old)sel[curList]=v;const e=document.getElementById('editor'),s=sep==='space'?' ':'\n',t=e.value?e.value+s+v:v;e.value=t;clip(v);items(curList);notify('Updated & copied!');}else{data[curList].push(v);items(curList);notify(`"${v}" added!`);}save();closeItemModal();}}
+function saveItem(){const v=document.getElementById('itemInput').value.trim();if(v&&curList){if(curIdx!==null){const old=data[curList][curIdx];data[curList][curIdx]=v;if(sel[curList]===old)sel[curList]=v;const s=sep==='space'?' ':'\n',entry=buildEntry(v),e=document.getElementById('editor'),t=e.value?e.value+s+entry:entry;e.value=t;clip(entry);items(curList);notify(tsEnabled?'Updated + timestamp copied!':'Updated & copied!');}else{data[curList].push(v);items(curList);notify(`"${v}" added!`);}save();closeItemModal();}}
 
 document.getElementById('itemModal').addEventListener('click',e=>{if(e.target.id==='itemModal')closeItemModal();});
 
@@ -316,8 +325,8 @@ function saveRename(){const v=document.getElementById('renameInput').value.trim(
 document.getElementById('renameModal').addEventListener('click',e=>{if(e.target.id==='renameModal')closeRenameModal();});
 document.getElementById('renameInput').addEventListener('keypress',e=>{if(e.key==='Enter')saveRename();});
 
-function download(){const b={version:'1.0',timestamp:new Date().toISOString(),data,names,order,nextId,sep,dtAction},l=document.createElement('a');l.href=URL.createObjectURL(new Blob([JSON.stringify(b,null,2)],{type:'application/json'}));l.download=`picklist-${new Date().toISOString().split('T')[0]}.json`;l.click();notify('Downloaded!');}
-function upload(ev){const f=ev.target.files[0];if(!f)return;const r=new FileReader();r.onload=e=>{try{const b=JSON.parse(e.target.result);if(!b.data||typeof b.data!=='object')throw new Error('Invalid');Object.keys(data).forEach(k=>delete data[k]);Object.keys(names).forEach(k=>delete names[k]);Object.keys(sel).forEach(k=>delete sel[k]);Object.assign(data,b.data);Object.assign(names,b.names||{});order=b.order||Object.keys(data).map(k=>parseInt(k));nextId=b.nextId||5;if(b.sep)sep=b.sep;if(b.dtAction)dtAction=b.dtAction;for(const id in data)sel[id]=null;render();document.getElementById('spaceBtn').classList.toggle('on',sep==='space');document.getElementById('newlineBtn').classList.toggle('on',sep==='newline');save();notify('Restored!');}catch(err){alert('Error: '+err.message);}};r.readAsText(f);ev.target.value='';}
+function download(){const b={version:'1.0',timestamp:new Date().toISOString(),data,names,order,nextId,sep,dtAction,tsEnabled},l=document.createElement('a');l.href=URL.createObjectURL(new Blob([JSON.stringify(b,null,2)],{type:'application/json'}));l.download=`picklist-${new Date().toISOString().split('T')[0]}.json`;l.click();notify('Downloaded!');}
+function upload(ev){const f=ev.target.files[0];if(!f)return;const r=new FileReader();r.onload=e=>{try{const b=JSON.parse(e.target.result);if(!b.data||typeof b.data!=='object')throw new Error('Invalid');Object.keys(data).forEach(k=>delete data[k]);Object.keys(names).forEach(k=>delete names[k]);Object.keys(sel).forEach(k=>delete sel[k]);Object.assign(data,b.data);Object.assign(names,b.names||{});order=b.order||Object.keys(data).map(k=>parseInt(k));nextId=b.nextId||5;if(b.sep)sep=b.sep;if(b.dtAction)dtAction=b.dtAction;if(typeof b.tsEnabled==='boolean')tsEnabled=b.tsEnabled;for(const id in data)sel[id]=null;render();document.getElementById('spaceBtn').classList.toggle('on',sep==='space');document.getElementById('newlineBtn').classList.toggle('on',sep==='newline');document.getElementById('tsOnBtn').classList.toggle('on',tsEnabled);document.getElementById('tsOffBtn').classList.toggle('on',!tsEnabled);save();notify('Restored!');}catch(err){alert('Error: '+err.message);}};r.readAsText(f);ev.target.value='';}
 
 load();
 render();
