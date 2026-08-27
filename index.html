@@ -39,9 +39,6 @@
         .copy { background: #457b9d; }
         .backup { background: #457b9d; }
         
-        .side-by-side { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 15px; }
-        .side-by-side .section { margin-bottom: 0; }
-        
         .sep-toggle { text-align: center; }
         .sep-toggle label { color: #1d3557; font-weight: 600; display: block; margin-bottom: 10px; font-size: 0.95em; }
         .sep-btns { display: flex; flex-direction: row; gap: 8px; }
@@ -172,13 +169,11 @@
         
         <div class="section"><h2>Text Editor</h2><textarea id="editor" placeholder="Selected items appear here..."></textarea><div class="btns"><button class="date" onclick="addDate()">📅 Date/Time</button><button class="export" onclick="exportTxt()">💾 Export</button><button class="clear" onclick="clearTxt()">Clear</button><button class="copy" onclick="copyTxt()">Copy</button></div></div>
         
-        <div class="side-by-side">
-            <div class="section sep-toggle"><h2>🔗 Separator</h2><div class="sep-btns"><button id="spaceBtn" class="on" onclick="setSep('space')">Space</button><button id="newlineBtn" onclick="setSep('newline')">New Line</button></div>
-                <label style="color:#1d3557;font-weight:600;display:block;margin:14px 0 8px;font-size:0.95em;">⏱️ Timestamp on Select</label>
-                <div class="sep-btns"><button id="tsOnBtn" class="on" onclick="setTimestamp(true)">On</button><button id="tsOffBtn" onclick="setTimestamp(false)">Off</button></div>
-            </div>
-            <div class="section backup-section-inner"><h2>🗂️ Backup</h2><div class="btns"><button class="backup" onclick="download()">💾 Download</button><button class="backup" onclick="restore.click()">📁 Restore</button></div><input type="file" id="restore" accept=".json" style="display:none" onchange="upload(event)"></div>
-        </div>
+        <div class="section sep-toggle"><h2>🔗 Separator</h2><div class="sep-btns"><button id="spaceBtn" class="on" onclick="setSep('space')">Space</button><button id="newlineBtn" onclick="setSep('newline')">New Line</button></div></div>
+        
+        <div class="section sep-toggle"><h2>⏱️ Timestamp on Select</h2><div class="sep-btns"><button id="tsOnBtn" class="on" onclick="setTimestamp(true)">On</button><button id="tsOffBtn" onclick="setTimestamp(false)">Off</button></div></div>
+        
+        <div class="section backup-section-inner"><h2>🗂️ Backup</h2><div class="btns"><button class="backup" onclick="download()">💾 Download</button><button class="backup" onclick="restore.click()">📁 Restore</button></div><input type="file" id="restore" accept=".json" style="display:none" onchange="upload(event)"></div>
         
         <button class="add-list" onclick="openListModal()">+ Add New Pick List</button>
         <div class="lists" id="lists"></div>
